@@ -1,2 +1,1 @@
-# depictqa.github.io
-Project Page
+# DepictQA Project Page
