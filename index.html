@@ -1,395 +1,179 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>DepictQA</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <meta name="author" content="Zhiyuan You">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:center">
+                    <name>DepictQA: Depicted Image Quality Assessment with Vision Language Models</name>
+                  </p>
+                  <subheading>
+                    <strong>DepictQA</strong> (<strong>Depict</strong>ed image <strong>Q</strong>uality
+                    <strong>A</strong>ssessment) is dedicated to developing multi-modal
+                    image quality assessment models that linguistically assess or compare image quality, aiming to more
+                    closely align with human expressions.
+                  </subheading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h2 class="title is-1 publication-title">Depicting Beyond Scores: <br>Advancing Image Quality Assessment
-              through Multi-modal Language Models</h2>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://zhiyuanyou.github.io/" target="_blank">Zhiyuan You</a><sup>12*</sup>,</span>
-              <span class="author-block">
-                <a href="https://xpixel.group/2010/03/16/zheyuanli.html" target="_blank">Zheyuan
-                  Li</a><sup>2*</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.jasongt.com/" target="_blank">Jinjin Gu</a><sup>34*</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?user=ngPR1dIAAAAJ&hl=zh-CN" target="_blank">Zhenfei
-                  Yin</a><sup>34</sup>,</span>
-              <span class="author-block">
-                <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>14&#10013</sup>,</span>
-              <span class="author-block">
-                <a href="https://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao
-                  Dong</a><sup>24&#10013</sup></span>
-              </span>
-            </div>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <heading>News</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong</span>
-              <span class="author-block"><sup>2</sup>Shenzhen Institute of Advanced Technology, Chinese Academy of
-                Sciences</span><br>
-              <span class="author-block"><sup>3</sup>University of Sydney</span>
-              <span class="author-block"><sup>4</sup>Shanghai AI Laboratory</span>
-            </div>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding-left:20px">
+                  <subheading>
+                    <strong>[2024.05]</strong>&nbsp;&nbsp;&nbsp;&nbsp;We release <a
+                      href="https://depictqa.github.io/depictqa-wild/">DepictQA-Wild</a> (DepictQA-v2): a
+                    multi-functional in-the-wild descriptive image auality assessment model.
+                  </subheading>
+                  <br>
+                  <subheading>
+                    <strong>[2023.12]</strong>&nbsp;&nbsp;&nbsp;&nbsp;We release <a
+                      href="https://depictqa.github.io/depictqa-v1/">DepictQA</a>, a multi-modal image auality
+                    assessment model based on vision language models.
+                  </subheading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-            <span class="eql-cntrb"><sup>*</sup>Equal Contribution <sup>&#10013</sup>Corresponding
-              Author</span>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <heading>Papers</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-                <!-- PDF link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2312.08962.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
+            <tr>
+              <td style="padding-left:20px">
+                <subheading>Arxiv, preprint</subheading>
+              </td>
+            </tr>
 
-                <!-- Github link -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span> -->
-
-                <!-- <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <svg class="svg-inline--fa fa-images fa-w-18" aria-hidden="true" focusable="false"
-                        data-prefix="far" data-icon="images" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512" data-fa-i2svg="">
-                        <path fill="currentColor"
-                          d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z">
-                        </path>
-                      </svg>
-                    </span>
-                    <span>Data</span>
-                  </a>
-                </span> -->
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2312.08962" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div class="hero-body">
-              <div class="columns is-centered has-text-centered">
-                <p>
-                  <strong><em>Demo, Codes, and Datasets will be released in around late May or early June
-                      2024.</em></strong>
+            <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
+              <td style="padding:10px;width:40%;vertical-align:middle">
+                <img src='images/depictqa-wild.png' style="width:100%">
+                </div>
+                <script type="text/javascript">
+                  function fhnet_start() {
+                    document.getElementById('fhnet_image').style.opacity = "1";
+                  }
+                  function fhnet_stop() {
+                    document.getElementById('fhnet_image').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
+              </td>
+              <td style="padding:10px;width:60%;vertical-align:middle">
+                <papertitle>Descriptive Image Quality Assessment in the Wild</papertitle>
+                <br>
+                <strong>Zhiyuan You</strong>,
+                Jinjin Gu, Zheyuan Li, Xin Cai, Kaiwen Zhu, Tianfan Xue†, Chao Dong†
+                <br>
+                <em>Arxiv</em>, 2023
+                <br>
+                paper (coming soon)
+                /
+                <a href="https://depictqa.github.io/depictqa-wild/">project page</a>
+                <p></p>
+                <p>We introduce <em>DepictQA-Wild</em>, a multi-functional in-the-wild descriptive image auality
+                  assessment model.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              </td>
+            </tr>
 
+            <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
+              <td style="padding:10px;width:40%;vertical-align:middle">
+                <img src='images/depictqa.png' style="width:100%">
+                </div>
+                <script type="text/javascript">
+                  function fhnet_start() {
+                    document.getElementById('fhnet_image').style.opacity = "1";
+                  }
+                  function fhnet_stop() {
+                    document.getElementById('fhnet_image').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
+              </td>
+              <td style="padding:10px;width:60%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2312.08962">
+                  <papertitle>Depicting Beyond Scores: Advancing Image Quality Assessment through Multi-modal Language
+                    Models
+                  </papertitle>
+                </a>
+                <br>
+                <strong>Zhiyuan You*</strong>,
+                Zheyuan Li*, Jinjin Gu*, Zhenfei Yin, Tianfan Xue†, Chao Dong†
+                <br>
+                <em>Arxiv</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2312.08962">paper</a>
+                /
+                <a href="https://depictqa.github.io/">project page</a>
+                <p></p>
+                <p>We introduce <em>DepictQA</em>, leveraging Multi-modal Large Language Models, allowing for detailed,
+                  language-based, and human-like evaluation of image quality.
+                </p>
+              </td>
+            </tr>
+    </tbody>
+  </table>
 
-  <!-- Paper abstract -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title is-3">Abstract</h5>
-          <div class="content has-text-justified">
-            <p>
-              We introduce a Depicted image Quality Assessment method (DepictQA).
-              DepictQA leverages <strong><em>Multi-modal Large Language Models</em></strong>, allowing for detailed,
-              language-based, human-like evaluation of image quality.
-              DepictQA interprets image content and distortions descriptively and comparatively, aligning closely with
-              humans' reasoning process.
-              To build the DepictQA model, we establish <strong><em>a hierarchical task paradigm</em></strong>, and
-              collect <strong><em>a multi-modal IQA training dataset</em></strong>.
-              To navigate the challenges in limited training data and processing multiple images, we propose to use
-              multi-source training data and specialized image tags.
-              Our DepictQA demonstrates a better performance than score-based methods on the BAPPS benchmark.
-              Moreover, compared with general MLLMs, our DepictQA can generate more accurate reasoning descriptive
-              languages.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Teaser -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Illustration of DepictQA</h5>
-          <div class="content has-text-justified">
-            <p>
-              DepictQA first <strong><em>identifies the distortions </em></strong>,
-              then <strong><em>weighs the influences</em></strong> of different distortions to the texture damages,
-              and finally <strong><em>obtains the comparison conclusion</em></strong>
-              that are better aligned with human judgments than score-based IQA methods.
-            </p>
-          </div>
-          <img src="static/images/teaser.png" , width="1000" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Task & Dataset -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Task Paradigm & Dataset Construction</h5>
-          <div class="content has-text-justified">
-            <p>
-              We build the task paradigm consisted of three tasks:
-              (a) <strong><em>quality description</em></strong>,
-              (b) <strong><em>quality comparison</em></strong>,
-              and (c) <strong><em>comparison reasoning</em></strong>.
-              <br>
-              Based on the task paradigm, we collect responses through
-              (1) <strong><em>questionnaire collection</em></strong>,
-              (2) <strong><em>GPT-4 generation</em></strong>,
-              and (3) <strong><em>annotator revision</em></strong>.
-            </p>
-          </div>
-          <img src="static/images/dataset.png" , width="1000" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Task 1 -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Results of Quality Description</h5>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-1.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-2.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-3.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-4.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-5.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task1-6.png" , width="1000" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Task 2 -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Results of Quality Comparison </h5>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-1.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-2.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-3.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-4.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-5.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-6.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-7.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task2-8.png" , width="1000" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Task 3 -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Results of Comparison Reasoning</h5>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-1.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-2.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-3.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-4.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-5.png" , width="1000" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/task3-6.png" , width="1000" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" id="BibTeX">
-    <div class="container" , style="text-align:center">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h5 class="title">BibTeX</h5>
-          <div class="content has-text-justified">
-            <pre><code>
-        @article{depictqa,
-          title={Depicting Beyond Scores: Advancing Image Quality Assessment through Multi-modal Language Models},
-          author={You, Zhiyuan and Li, Zheyuan, and Gu, Jinjin, and Yin, Zhenfei and Xue, Tianfan and Dong, Chao},
-          journal={arXiv preprint arXiv:2312.08962},
-          year={2023}
-        }
-      </code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <small>
-              <p>
-                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                  target="_blank">Academic Project Page Template</a>.
-                <br> This website is licensed under a <a rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                  Commons Attribution-ShareAlike 4.0 International License</a>.
-              </p>
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template from <a href="https://github.com/jonbarron/jonbarron_website">JonBarron</a>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </td>
+  </tr>
+  </table>
 </body>
 
 </html>
