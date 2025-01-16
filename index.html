@@ -64,6 +64,17 @@
               <tr>
                 <td style="padding-left:20px">
                   <subheading>
+                    <strong>[2025.01]</strong>&nbsp;&nbsp;&nbsp;&nbsp;We released 
+                    <a href="https://depictqa.github.io/deqa-score/">DeQA-Score</a>, 
+                    a distribution-based depicted image quality assessment model for score regression.
+                    <a href="https://huggingface.co/datasets/zhiyuanyou/Data-DeQA-Score">Datasets</a>, 
+                    <a href="https://github.com/zhiyuanyou/DeQA-Score">codes</a>, and model weights 
+                    (<a href="https://huggingface.co/zhiyuanyou/DeQA-Score-Mix3">full tuning</a> / 
+                    <a href="https://huggingface.co/zhiyuanyou/DeQA-Score-LoRA-Mix3">LoRA tuning</a>)
+                    were available.
+                  </subheading>
+                  <br>
+                  <subheading>
                     <strong>[2024.07]</strong>&nbsp;&nbsp;&nbsp;&nbsp;Datasets (<a
                     href="https://huggingface.co/datasets/zhiyuanyou/DataDepictQA">huggingface</a> / <a
                     href="https://modelscope.cn/datasets/zhiyuanyou/DataDepictQA">modelscope</a>) 
@@ -116,6 +127,44 @@
             <tr>
               <td style="padding-left:20px">
                 <subheading>arXiv, preprint</subheading>
+              </td>
+            </tr>
+
+            <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
+              <td style="padding:10px;width:40%;vertical-align:middle">
+                <img src='images/deqa-score.png' style="width:100%">
+                </div>
+                <script type="text/javascript">
+                  function fhnet_start() {
+                    document.getElementById('fhnet_image').style.opacity = "1";
+                  }
+                  function fhnet_stop() {
+                    document.getElementById('fhnet_image').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
+              </td>
+              <td style="padding:10px;width:60%;vertical-align:middle">
+                <a href="">
+                  <papertitle>Teaching Large Language Models to Regress Accurate Image Quality Scores using Score Distribution</papertitle>
+                </a>
+                <br>
+                <strong>Zhiyuan You</strong>,
+                Xin Cai, Jinjin Gu, Tianfan Xue†, Chao Dong†
+                <br>
+                <em>arXiv</em>, 2025
+                <br>
+                <a href="">paper</a>
+                /
+                <a href="https://depictqa.github.io/deqa-score/">project page</a>
+                /
+                <a href="https://github.com/zhiyuanyou/DeQA-Score">code</a>
+                /
+                <a href="https://huggingface.co/datasets/zhiyuanyou/Data-DeQA-Score">data</a>
+                <p></p>
+                <p>We introduce <em>DeQA-Score</em>, a distribution-based depicted image quality assessment model 
+                  for score regression.
+                </p>
               </td>
             </tr>
 
